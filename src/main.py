@@ -52,7 +52,7 @@ for _, row in df.iterrows():
         try:
             response = requests.get(url)
             if response.status_code != 200:
-                print(f"⚠️ Error: {response.status_code} for query: {query}")
+                print(f"Error: {response.status_code} for query: {query}")
                 continue
 
             data = response.json()
